@@ -1,2 +1,2 @@
 # chatbot
-This is a chatbot which can be trained to answer any questions which is asked from a pdf.
+This is a Gemini-powered chatbot for multi-modal user engagement, delivering accurate, contextually relevant responses, and providing a seamless, intuitive experience.      .
