@@ -1,0 +1,14 @@
+# One-click deploy config for Render (https://render.com).
+# Add GEMINI_API_KEY in the Render dashboard after the first deploy.
+services:
+  - type: web
+    name: gemini-chatbot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash
